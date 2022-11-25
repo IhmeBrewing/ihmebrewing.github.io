@@ -1,12 +1,50 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 50px auto 5px;
   gap: 0px 0px;
+
   grid-template-areas:
     ". . ."
     ". Content ."
     ". . .";
   justify-items: center;
 }
-.Content { grid-area: Content; }
+.Content {
+  grid-area: Content;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+#ihmelogo {
+  width: 300px;
+}
+
+#instalogo {
+  height: 35px;
+  width: 35px;
+}
+
+#instalink-container {
+  height: 35px;
+}
+
+#instalink {
+  display: block;
+}
+
+#instalinktext {
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+#collab {
+  font-size: x-large;
+}
